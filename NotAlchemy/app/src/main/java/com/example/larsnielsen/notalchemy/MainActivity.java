@@ -16,21 +16,60 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-        public void buttonPress (View v){
-            switch (v.getId()) {
-                case R.id.imageButton:
-                    ImageButton buttonOne = (ImageButton) findViewById(R.id.imageButton);
-                    buttonOne.setVisibility(View.GONE);
-                    break;
-                case R.id.imageButton2:
-                    ImageButton buttonFive = (ImageButton) findViewById(R.id.imageButton3);
-                    buttonFive.setVisibility(View.VISIBLE);
-                    break;
 
+    /*
+    ImageButton buttonGrid[][] = new ImageButton[5][10];
+
+    public void buttonPress(View v) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 10; j++) {
+                String btnID = "R.id.";
+                switch (i) {
+                    case 0:
+                        btnID.concat("one"); break;
+                }
+                switch (j) {
+
+                }
+                buttonGrid[i][j] = (ImageButton) findViewById(Integer.parseInt(btnID));
             }
         }
 
+    }
+    */
+
+
+
+
+    /*
+
+    Vi burde overveje at tilføje billederne i MainActivity i stedet for i xml filen, da der kommer
+    til at være en del billeder. Man kunne evt. lave en array som holder billederne i sig eller
+    noget.. Eller noget som hedder en LayoutInflater/ViewInflater
+
+    */
+
+    public void buttonPress (View v){
+            switch (v.getId()) {
+                case R.id.fireButton:
+                case R.id.waterButton: {
+
+                    ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
+                    steamButton.setVisibility(View.VISIBLE);
+                    break;
+                }
+
+                case R.id.steamButton:
+                    ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
+                    steamButton.setVisibility(View.GONE);
+
+
+            }
+        }
 }
+
+
+
 
 
 

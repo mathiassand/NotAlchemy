@@ -18,9 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+
             <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
+                android:id="@+id/airButton"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:onClick="buttonPress"
                 android:background="@mipmap/air"
@@ -28,8 +30,8 @@
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
+                android:id="@+id/earthButton"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:onClick="buttonPress"
                 android:background="@mipmap/earth"
@@ -37,8 +39,8 @@
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="wrap_content"
+                android:id="@+id/fireButton"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:onClick="buttonPress"
                 android:background="@mipmap/fire"
@@ -46,13 +48,25 @@
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
+                android:id="@+id/waterButton"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:onClick="buttonPress"
                 android:background="@mipmap/water"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/snowButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/snow"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                android:visibility="gone"
                 app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="204dp" />
         </TableRow>
 
         <TableRow
@@ -60,33 +74,11 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="buttonPress"
-                android:visibility="gone"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground"
-                android:background="@mipmap/snow"
-                tools:layout_editor_absoluteX="140dp"
-                tools:layout_editor_absoluteY="204dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
+                android:id="@+id/steamButton"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:onClick="buttonPress"
                 android:background="@mipmap/steam"
-                android:visibility="gone"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="buttonPress"
-                android:background="@mipmap/snow"
                 android:visibility="gone"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
@@ -101,10 +93,6 @@
             android:layout_height="match_parent" />
     </TableLayout>
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="155dp" />
+
 
 </android.support.constraint.ConstraintLayout>
