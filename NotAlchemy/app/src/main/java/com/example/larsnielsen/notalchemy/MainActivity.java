@@ -26,3 +26,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+/*
+playButton = (Button) findViewById(R.id.play);
+        playButton.setVisibility(1);
+        playButton.setOnClickListener(new OnClickListener() {
+@Override
+public void onClick(View v) {
+        //when play is clicked show stop button and hide play button
+        playButton.setVisibility(View.GONE);
+        stopButton.setVisibility(View.VISIBLE);
+        }
+        });
+*/
