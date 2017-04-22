@@ -19,39 +19,82 @@
             android:layout_height="match_parent">
 
 
-
             <ImageButton
                 android:id="@+id/airButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
-                android:onClick="buttonPress"
                 android:background="@mipmap/air"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
 
             <ImageButton
                 android:id="@+id/earthButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
-                android:onClick="buttonPress"
                 android:background="@mipmap/earth"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
 
             <ImageButton
                 android:id="@+id/fireButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
                 android:background="@mipmap/fire"
-                app:srcCompat="@android:color/transparent"
+                android:onClick="buttonPress"
                 android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
+                app:srcCompat="@android:color/transparent" />
 
             <ImageButton
                 android:id="@+id/waterButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
                 android:background="@mipmap/water"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageButton
+                android:id="@+id/dustButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:onClick="buttonPress"
+                android:background="@mipmap/dust"
+                app:srcCompat="@android:color/transparent"
+                android:src="?android:selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/swampButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:onClick="buttonPress"
+                android:background="@mipmap/swamp"
+                app:srcCompat="@android:color/transparent"
+                android:src="?android:selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/humanButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/human"
+                app:srcCompat="@android:color/transparent"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/soilButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/soil"
                 android:onClick="buttonPress"
                 android:src="?android:selectableItemBackground"
                 app:srcCompat="@android:color/transparent" />
@@ -73,25 +116,28 @@
                 app:srcCompat="@android:color/transparent" />
 
             <ImageButton
-                android:id="@+id/imageButton12"
+                android:id="@+id/stoneButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/stone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/daveButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/dave"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/cloudButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground"
+                android:background="@mipmap/cloud"
                 tools:layout_editor_absoluteX="148dp"
                 tools:layout_editor_absoluteY="67dp" />
 
@@ -102,30 +148,34 @@
             android:layout_height="match_parent" >
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/lifeButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
+                android:background="@mipmap/life"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/energyButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/energy"
+                android:src="?android:selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/electricityButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/electricity"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/metalButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
-
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
+                android:background="@mipmap/metal"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
 
@@ -136,30 +186,34 @@
             android:layout_height="match_parent" >
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/laptopButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/laptop"
+                android:src="?android:selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/obsidianButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/obsidian"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/lavaButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
+                android:background="@mipmap/lava"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/gunpowderButton"
                 android:layout_width="90dp"
                 android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
+                android:background="@mipmap/gunpowder"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground" />
         </TableRow>
@@ -179,7 +233,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.852" />
 
 
 </android.support.constraint.ConstraintLayout>
