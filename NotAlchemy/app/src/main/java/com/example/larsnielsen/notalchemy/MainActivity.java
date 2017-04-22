@@ -10,7 +10,7 @@ import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 
 public class MainActivity extends AppCompatActivity {
-
+    int selector = 0;
     Elements water;
     Elements fire;
     Elements air;
@@ -68,26 +68,24 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void combineButton (View v){
+
         if(water.activation==FALSE){
             Toast toast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
             toast.show();
         }
-        if(fire.activation==TRUE && water.activation==TRUE){
+        else if(fire.activation==TRUE && water.activation==TRUE){
             Toast testing = Toast.makeText(getApplicationContext(), "IT FUCKING WORKS BOYS", Toast.LENGTH_SHORT);
             testing.show();
         }
+
+
     }
 
 
     public void buttonPress (View v){
             switch (v.getId()) {
                 case R.id.fireButton:
-                    if(fire.activation==FALSE){
-                        fire.activation = TRUE;
-                    }
-                    else if(fire.activation = TRUE){
-                        fire.activation = FALSE;
-                    }
+                    Elements.changestate(fire.isActivation());
 
 
                 case R.id.waterButton: {
@@ -108,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
-
 
 
 /*
