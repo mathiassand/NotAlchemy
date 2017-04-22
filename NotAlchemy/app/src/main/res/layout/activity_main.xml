@@ -70,6 +70,7 @@
                 android:onClick="buttonPress"
                 android:background="@mipmap/dust"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -79,6 +80,7 @@
                 android:onClick="buttonPress"
                 android:background="@mipmap/swamp"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -88,6 +90,7 @@
                 android:background="@mipmap/human"
                 app:srcCompat="@android:color/transparent"
                 android:src="?android:selectableItemBackground"
+                android:visibility="gone"
                 android:onClick="buttonPress"/>
 
             <ImageButton
@@ -97,6 +100,7 @@
                 android:background="@mipmap/soil"
                 android:onClick="buttonPress"
                 android:src="?android:selectableItemBackground"
+                android:visibility="gone"
                 app:srcCompat="@android:color/transparent" />
 
         </TableRow>
@@ -121,6 +125,7 @@
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/stone"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -129,6 +134,7 @@
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/dave"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -139,6 +145,7 @@
                 android:src="?android:selectableItemBackground"
                 android:background="@mipmap/cloud"
                 tools:layout_editor_absoluteX="148dp"
+                android:visibility="gone"
                 tools:layout_editor_absoluteY="67dp" />
 
         </TableRow>
@@ -153,6 +160,7 @@
                 android:layout_height="70dp"
                 android:background="@mipmap/life"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -161,6 +169,7 @@
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/energy"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -169,6 +178,7 @@
                 android:layout_height="70dp"
                 android:background="@mipmap/electricity"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -177,6 +187,7 @@
                 android:layout_height="70dp"
                 android:background="@mipmap/metal"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
         </TableRow>
@@ -191,6 +202,7 @@
                 android:layout_height="70dp"
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/laptop"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -199,6 +211,7 @@
                 android:layout_height="70dp"
                 android:background="@mipmap/obsidian"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -207,6 +220,7 @@
                 android:layout_height="70dp"
                 android:background="@mipmap/lava"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
 
             <ImageButton
@@ -215,6 +229,7 @@
                 android:layout_height="70dp"
                 android:background="@mipmap/gunpowder"
                 app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
                 android:src="?android:selectableItemBackground" />
         </TableRow>
     </TableLayout>
