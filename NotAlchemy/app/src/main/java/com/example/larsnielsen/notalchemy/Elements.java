@@ -31,18 +31,18 @@ public class Elements extends MainActivity{
 
 
     public void changestate(int selector){
-        if(selector == 1) {
+        if(selector == getValue()) {
             if(this.isActivation() == TRUE){
                 activation = FALSE;
             }else{
                 activation = TRUE;
             }
         }
-        if(selector == 2) {
+        /*if(selector == 2) {
             if(this.isActivation() == TRUE){
                 activation = FALSE;
             }else{
                 activation = TRUE;
             }
         }
-        }}
+        */}}
