@@ -32,10 +32,10 @@ public class Elements extends MainActivity{
 
     public void changestate(int selector){
         if(selector == 1) {
-            if(water.activation == TRUE){
-                water.activation = FALSE;
+            if(this.isActivation() == TRUE){
+                activation = FALSE;
             }else{
-                water.activation = TRUE;
+                activation = TRUE;
             }
         }
         if(selector == 2) {

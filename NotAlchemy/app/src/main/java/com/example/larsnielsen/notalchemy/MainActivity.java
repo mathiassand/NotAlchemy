@@ -85,19 +85,11 @@ public class MainActivity extends AppCompatActivity {
     public void buttonPress (View v){
             switch (v.getId()) {
                 case R.id.fireButton:
-                    if(fire.activation == TRUE){
-                        fire.activation = FALSE;
-                    }else{
-                        fire.activation = TRUE;
-                    }
+                    fire.changestate(fire.getValue());
                     break;
 
                 case R.id.waterButton: {
-                    if(water.activation == TRUE){
-                        water.activation = FALSE;
-                    }else{
-                        water.activation = TRUE;
-                    }
+                    water.changestate(water.getValue());
                     /*ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
                     steamButton.setVisibility(View.VISIBLE);
                     water.activation = TRUE;*/
