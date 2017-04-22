@@ -10,7 +10,7 @@ import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 
 public class MainActivity extends AppCompatActivity {
-    int selector = 0;
+
     Elements water;
     Elements fire;
     Elements air;
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonPress (View v){
             switch (v.getId()) {
                 case R.id.fireButton:
-                    Elements.changestate(fire.isActivation());
+                    fire.changestate(fire.getValue());
 
 
                 case R.id.waterButton: {
