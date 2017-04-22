@@ -39,10 +39,10 @@ public class Elements extends MainActivity{
             }
         }
         if(selector == 2) {
-            if(fire.activation == TRUE){
-                fire.activation = FALSE;
+            if(this.isActivation() == TRUE){
+                activation = FALSE;
             }else{
-                fire.activation = TRUE;
+                activation = TRUE;
             }
         }
         }}
