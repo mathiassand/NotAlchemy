@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(fire.activation==TRUE && water.activation==TRUE){
             Toast testing = Toast.makeText(getApplicationContext(), "IT FUCKING WORKS BOYS", Toast.LENGTH_SHORT);
+            ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
+            steamButton.setVisibility(View.VISIBLE);
+            water.activation = TRUE;
             testing.show();
         }
 
@@ -90,9 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
                 case R.id.waterButton: {
                     water.changestate(water.getValue());
-                    /*ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
-                    steamButton.setVisibility(View.VISIBLE);
-                    water.activation = TRUE;*/
+
                     break;
                 }
 
