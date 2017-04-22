@@ -61,12 +61,20 @@ public class MainActivity extends AppCompatActivity {
     noget.. Eller noget som hedder en LayoutInflater/ViewInflater
 
     */
+    //How to declare new elements and assign values to them:
+    //Elements test = new Elements(5, TRUE);
+
+
+
 
     public void combineButton (View v){
-        //Elements steam = new Elements(4, TRUE);
         if(water.activation==FALSE){
             Toast toast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
             toast.show();
+        }
+        if(fire.activation==TRUE && water.activation==TRUE){
+            Toast testing = Toast.makeText(getApplicationContext(), "IT FUCKING WORKS BOYS", Toast.LENGTH_SHORT);
+            testing.show();
         }
     }
 
@@ -74,14 +82,18 @@ public class MainActivity extends AppCompatActivity {
     public void buttonPress (View v){
             switch (v.getId()) {
                 case R.id.fireButton:
-                    Elements test = new Elements(5, TRUE);
-                    if(test.activation==TRUE) {
-                        Toast firetoast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
-                        firetoast.show();
+                    if(fire.activation==FALSE){
+                        fire.activation = TRUE;
                     }
+                    else if(fire.activation = TRUE){
+                        fire.activation = FALSE;
+                    }
+
+
                 case R.id.waterButton: {
                     ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
                     steamButton.setVisibility(View.VISIBLE);
+                    water.activation = TRUE;
                     break;
                 }
 
@@ -96,11 +108,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
-
-
-
-
-
 
 
 
