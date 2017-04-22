@@ -31,13 +31,18 @@ public class Elements extends MainActivity{
 
 
     public void changestate(int selector){
-        if(selector == 2) {
-            fire.activation = TRUE;
-        }else if(fire.activation = TRUE){
-                fire.activation = FALSE;
+        if(selector == 1) {
+            if(water.activation == TRUE){
+                water.activation = FALSE;
+            }else{
+                water.activation = TRUE;
             }
-
         }
-
-
+        if(selector == 2) {
+            if(fire.activation == TRUE){
+                fire.activation = FALSE;
+            }else{
+                fire.activation = TRUE;
+            }
         }
+        }}

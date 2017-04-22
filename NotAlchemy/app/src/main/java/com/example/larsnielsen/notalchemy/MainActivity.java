@@ -86,19 +86,20 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.fireButton:
                     fire.changestate(fire.getValue());
-
+                    break;
 
                 case R.id.waterButton: {
-                    ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
+                    water.changestate(water.getValue());
+                    /*ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
                     steamButton.setVisibility(View.VISIBLE);
-                    water.activation = TRUE;
+                    water.activation = TRUE;*/
                     break;
                 }
 
                 case R.id.steamButton:
                     ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
                     steamButton.setVisibility(View.GONE);
-
+                    break;
 
 
             }
