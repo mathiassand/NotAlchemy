@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Declaring objects
+        //Declaring objects. The objects declared are the elements that the player starts out with.
         water = new Elements(1, FALSE);
         fire = new Elements(2, FALSE);
         air = new Elements(3, FALSE);
@@ -74,8 +74,12 @@ public class MainActivity extends AppCompatActivity {
     public void buttonPress (View v){
             switch (v.getId()) {
                 case R.id.fireButton:
+                    Elements test = new Elements(5, TRUE);
+                    if(test.activation==TRUE) {
+                        Toast firetoast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
+                        firetoast.show();
+                    }
                 case R.id.waterButton: {
-
                     ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
                     steamButton.setVisibility(View.VISIBLE);
                     break;

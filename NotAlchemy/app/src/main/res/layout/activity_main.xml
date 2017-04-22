@@ -44,7 +44,8 @@
                 android:layout_height="wrap_content"
                 android:background="@mipmap/fire"
                 app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/waterButton"
