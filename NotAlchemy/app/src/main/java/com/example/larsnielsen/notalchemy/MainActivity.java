@@ -4,15 +4,28 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import static java.lang.Boolean.FALSE;
+import static java.lang.Boolean.TRUE;
 
 public class MainActivity extends AppCompatActivity {
 
+    Elements water;
+    Elements fire;
+    Elements air;
+    Elements earth;
+
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Declaring objects
+        water = new Elements(1, FALSE);
+        fire = new Elements(2, FALSE);
+        air = new Elements(3, FALSE);
+        earth = new Elements(4, FALSE);
 
     }
 
@@ -49,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
 
     */
 
+    public void combineButton (View v){
+        //Elements steam = new Elements(4, TRUE);
+        if(water.activation==FALSE){
+            Toast toast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+
+
     public void buttonPress (View v){
             switch (v.getId()) {
                 case R.id.fireButton:
@@ -64,8 +86,11 @@ public class MainActivity extends AppCompatActivity {
                     steamButton.setVisibility(View.GONE);
 
 
+
             }
         }
+
+
 }
 
 
