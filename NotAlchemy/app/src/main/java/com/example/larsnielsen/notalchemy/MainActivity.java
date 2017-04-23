@@ -10,6 +10,7 @@ import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 
 public class MainActivity extends AppCompatActivity {
+    static int statuscheck = 0;
 
     Elements water;
     Elements fire;
@@ -65,23 +66,24 @@ public class MainActivity extends AppCompatActivity {
     //Elements test = new Elements(5, TRUE);
 
 
-
-
     public void combineButton (View v){
 
-        if(water.activation==FALSE){
-            Toast toast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
+        if(statuscheck > 2 || statuscheck < 2){
+            Toast toast = Toast.makeText(getApplicationContext(), "Too many or too few elements selected", Toast.LENGTH_SHORT);
             toast.show();
         }
         else if(fire.activation==TRUE && water.activation==TRUE){
             Toast testing = Toast.makeText(getApplicationContext(), "IT FUCKING WORKS BOYS", Toast.LENGTH_SHORT);
+            testing.show();
             ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
             steamButton.setVisibility(View.VISIBLE);
-            water.activation = TRUE;
-            testing.show();
+            Elements steam = new Elements (5, FALSE);
         }
-
-
+        else if(fire.activation == TRUE && earth.activation==TRUE){
+            ImageButton lavaButton = (ImageButton) findViewById(R.id.lavaButton);
+            lavaButton.setVisibility(View.VISIBLE);
+            Elements lava = new Elements (6, FALSE);
+        }
     }
 
 
@@ -90,13 +92,15 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.fireButton:
                     fire.changestate(fire.getValue());
                     break;
-
-                case R.id.waterButton: {
+                case R.id.waterButton:
                     water.changestate(water.getValue());
-
                     break;
-                }
-
+                case R.id.earthButton:
+                    earth.changestate(earth.getValue());
+                    break;
+                case R.id.airButton:
+                    air.changestate(air.getValue());
+                    break;
                 case R.id.steamButton:
                     ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
                     steamButton.setVisibility(View.GONE);

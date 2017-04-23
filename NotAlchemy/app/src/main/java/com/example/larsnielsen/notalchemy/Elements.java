@@ -34,15 +34,10 @@ public class Elements extends MainActivity{
         if(selector == getValue()) {
             if(this.isActivation() == TRUE){
                 activation = FALSE;
+                statuscheck -= 1;
             }else{
                 activation = TRUE;
+                statuscheck += 1;
             }
         }
-        /*if(selector == 2) {
-            if(this.isActivation() == TRUE){
-                activation = FALSE;
-            }else{
-                activation = TRUE;
-            }
-        }
-        */}}
+    }}
