@@ -91,8 +91,6 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
         else if(fire.activation==TRUE && water.activation==TRUE){
-            Toast testing = Toast.makeText(getApplicationContext(), "IT FUCKING WORKS BOYS", Toast.LENGTH_SHORT);
-            testing.show();
             ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
             steamButton.setVisibility(View.VISIBLE);
             steam = new Elements (5, FALSE);
@@ -100,12 +98,18 @@ public class MainActivity extends AppCompatActivity {
         else if(fire.activation == TRUE && earth.activation==TRUE){
             ImageButton lavaButton = (ImageButton) findViewById(R.id.lavaButton);
             lavaButton.setVisibility(View.VISIBLE);
-            Elements lava = new Elements (6, FALSE);
+            lava = new Elements (6, FALSE);
         }
         else if (air.activation == TRUE && steam.activation == TRUE){
             ImageButton cloudButton = (ImageButton) findViewById(R.id.cloudButton);
             cloudButton.setVisibility(View.VISIBLE);
-            Elements cloud = new Elements (7, FALSE);
+            cloud = new Elements (7, FALSE);
+        }
+
+
+        else{
+            Toast invalid = Toast.makeText(getApplicationContext(), "Invalid combination of elements", Toast.LENGTH_SHORT);
+            invalid.show();
         }
     }
 
@@ -126,8 +130,51 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.steamButton:
                     steam.changestate(steam.getValue());
                     break;
-
-
+                case R.id.lavaButton:
+                    lava.changestate(lava.getValue());
+                    break;
+                case R.id.stoneButton:
+                     stone.changestate(stone.getValue());
+                     break;
+                case R.id.energyButton:
+                    energy.changestate(energy.getValue());
+                    break;
+                case R.id.metalButton:
+                    metal.changestate(metal.getValue());
+                    break;
+                case R.id.electricityButton:
+                    electricity.changestate(electricity.getValue());
+                    break;
+                case R.id.laptopButton:
+                    computer.changestate(computer.getValue());
+                    break;
+                case R.id.lifeButton:
+                    life.changestate(life.getValue());
+                    break;
+                case R.id.humanButton:
+                    human.changestate(human.getValue());
+                    break;
+                case R.id.swampButton:
+                    swamp.changestate(swamp.getValue());
+                    break;
+                case R.id.soilButton:
+                    mud.changestate(mud.getValue());
+                    break;
+                case R.id.daveButton:
+                    dave.changestate(dave.getValue());
+                    break;
+                case R.id.obsidianButton:
+                    obsidian.changestate(obsidian.getValue());
+                    break;
+                case R.id.gunpowderButton:
+                    gunpowder.changestate(gunpowder.getValue());
+                    break;
+                case R.id.dustButton:
+                    dust.changestate(dust.getValue());
+                    break;
+                case R.id.cloudButton:
+                    cloud.changestate(cloud.getValue());
+                    break;
             }
         }
 
