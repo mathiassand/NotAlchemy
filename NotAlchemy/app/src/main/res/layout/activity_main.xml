@@ -126,7 +126,8 @@
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/stone"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/daveButton"
@@ -135,7 +136,8 @@
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/dave"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/cloudButton"
@@ -146,7 +148,8 @@
                 android:background="@mipmap/cloud"
                 tools:layout_editor_absoluteX="148dp"
                 android:visibility="gone"
-                tools:layout_editor_absoluteY="67dp" />
+                tools:layout_editor_absoluteY="67dp"
+                android:onClick="buttonPress"/>
 
         </TableRow>
 
@@ -161,7 +164,8 @@
                 android:background="@mipmap/life"
                 app:srcCompat="@android:color/transparent"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/energyButton"
@@ -170,7 +174,8 @@
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/energy"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/electricityButton"
@@ -179,7 +184,8 @@
                 android:background="@mipmap/electricity"
                 app:srcCompat="@android:color/transparent"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/metalButton"
@@ -188,7 +194,8 @@
                 android:background="@mipmap/metal"
                 app:srcCompat="@android:color/transparent"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
         </TableRow>
 
@@ -203,7 +210,8 @@
                 app:srcCompat="@android:color/transparent"
                 android:background="@mipmap/laptop"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/obsidianButton"
@@ -212,7 +220,8 @@
                 android:background="@mipmap/obsidian"
                 app:srcCompat="@android:color/transparent"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/lavaButton"
@@ -221,7 +230,8 @@
                 android:background="@mipmap/lava"
                 app:srcCompat="@android:color/transparent"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
 
             <ImageButton
                 android:id="@+id/gunpowderButton"
@@ -230,7 +240,8 @@
                 android:background="@mipmap/gunpowder"
                 app:srcCompat="@android:color/transparent"
                 android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
         </TableRow>
     </TableLayout>
 

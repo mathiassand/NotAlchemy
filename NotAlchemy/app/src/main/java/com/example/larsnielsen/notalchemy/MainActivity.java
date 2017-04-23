@@ -14,6 +14,8 @@ import static java.lang.Boolean.TRUE;
 public class MainActivity extends AppCompatActivity {
     static int statuscheck = 0;
     //Declaring element objects
+    //DO THIS USING AN ARRAY OF OBJECTS INSTEAD TO GAIN MASSIVE POINTS, but how to do so when each
+    //have different names?!?! Processing book page 154.
     Elements water;
     Elements fire;
     Elements air;
@@ -36,16 +38,13 @@ public class MainActivity extends AppCompatActivity {
     Elements human;
     private int image;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //Initiating all of the elements. If this isn't done before the combine button is pressed,
         //the program can crash as it doesn't know whether an element is true or false when checking.
-
         Bitmap bitmap = getIntent().getParcelableExtra("steamButton");
         ImageButton imageView = (ImageButton) findViewById(R.id.steamButton);
         imageView.setImageBitmap(bitmap);
@@ -57,10 +56,7 @@ public class MainActivity extends AppCompatActivity {
             image = savedInstanceState.getInt(String.valueOf(bitmap), R.id.cloudButton);
         }
 
-
         //Declaring objects. The objects declared are the elements that the player starts out with.
-
-
         water = new Elements(1, FALSE);
         fire = new Elements(2, FALSE);
         air = new Elements(3, FALSE);
@@ -90,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(String.valueOf(bitmap), image);
         super.onSaveInstanceState(outState);
     }
-
 
     /*
     ImageButton buttonGrid[][] = new ImageButton[5][10];
@@ -157,8 +152,8 @@ public class MainActivity extends AppCompatActivity {
             metalButton.setVisibility(View.VISIBLE);
         }
         else if (energy.activation==TRUE && metal.activation==TRUE){
-            ImageButton computerButton = (ImageButton) findViewById(R.id.laptopButton);
-            computerButton.setVisibility(View.VISIBLE);
+            ImageButton electricityButton = (ImageButton) findViewById(R.id.electricityButton);
+            electricityButton.setVisibility(View.VISIBLE);
         }
         else if (computer.activation == TRUE && human.activation== TRUE){
             ImageButton daveButton = (ImageButton) findViewById(R.id.daveButton);
@@ -188,10 +183,15 @@ public class MainActivity extends AppCompatActivity {
             ImageButton humanButton = (ImageButton) findViewById(R.id.humanButton);
             humanButton.setVisibility(View.VISIBLE);
         }
+        else if (electricity.activation==TRUE && metal.activation==TRUE) {
+            ImageButton computerButton = (ImageButton) findViewById(R.id.laptopButton);
+            computerButton.setVisibility(View.VISIBLE);
+        }
         else{
             Toast invalid = Toast.makeText(getApplicationContext(), "Invalid combination of elements", Toast.LENGTH_SHORT);
             invalid.show();
         }
+        reset();
     }
 
     public void buttonPress (View v){
@@ -259,6 +259,30 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+    public void reset(){
+        //Skriv her kode der ændrer alle objektor til false
+        fire.activation = FALSE;
+        water.activation = FALSE;
+        earth.activation = FALSE;
+        air.activation = FALSE;
+        lava.activation = FALSE;
+        stone.activation = FALSE;
+        cloud.activation = FALSE;
+        steam.activation = FALSE;
+        life.activation = FALSE;
+        mud.activation = FALSE;
+        swamp.activation = FALSE;
+        energy.activation = FALSE;
+        electricity.activation = FALSE;
+        metal.activation = FALSE;
+        computer.activation = FALSE;
+        human.activation = FALSE;
+        dust.activation = FALSE;
+        gunpowder.activation = FALSE;
+        dave.activation = FALSE;
+        obsidian.activation = FALSE;
+        statuscheck = 0;
+    }
 }
 
 /*

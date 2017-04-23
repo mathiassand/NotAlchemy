@@ -25,9 +25,7 @@ public class Elements extends MainActivity{
     }
 
 
-    public static void reset(){
-        //Skriv her kode der ændrer alle objektor til false
-    }
+
 
 
     public void changestate(int selector){
