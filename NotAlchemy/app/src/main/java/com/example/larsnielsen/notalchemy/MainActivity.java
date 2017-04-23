@@ -1,11 +1,13 @@
 package com.example.larsnielsen.notalchemy;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import static android.R.attr.bitmap;
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     Elements swamp;
     Elements gunpowder;
     Elements human;
+    private int image;
 
 
     @Override
@@ -39,8 +42,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         //Initiating all of the elements. If this isn't done before the combine button is pressed,
         //the program can crash as it doesn't know whether an element is true or false when checking.
+
+        Bitmap bitmap = getIntent().getParcelableExtra("steamButton");
+        ImageButton imageView = (ImageButton) findViewById(R.id.steamButton);
+        imageView.setImageBitmap(bitmap);
+
+        if (savedInstanceState == null) {
+            image = R.id.cloudButton;
+        } else {
+            // if there is a bundle, use the saved image resource (if one is there)
+            image = savedInstanceState.getInt(String.valueOf(bitmap), R.id.cloudButton);
+        }
+
+
+        //Declaring objects. The objects declared are the elements that the player starts out with.
+
 
         water = new Elements(1, FALSE);
         fire = new Elements(2, FALSE);
@@ -63,6 +82,13 @@ public class MainActivity extends AppCompatActivity {
         gunpowder = new Elements(19, FALSE);
         dust = new Elements(20, FALSE);
 
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        // Make sure you save the current image resource
+        outState.putInt(String.valueOf(bitmap), image);
+        super.onSaveInstanceState(outState);
     }
 
 
