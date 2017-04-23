@@ -39,12 +39,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Declaring objects. The objects declared are the elements that the player starts out with.
+        //Initiating all of the elements. If this isn't done before the combine button is pressed,
+        //the program can crash as it doesn't know whether an element is true or false when checking.
 
         water = new Elements(1, FALSE);
         fire = new Elements(2, FALSE);
         air = new Elements(3, FALSE);
         earth = new Elements(4, FALSE);
+        steam = new Elements (5, FALSE);
+        lava = new Elements (6, FALSE);
+        cloud = new Elements (7, FALSE);
+        stone = new Elements(8, FALSE);
+        energy = new Elements (9, FALSE);
+        metal = new Elements (10, FALSE);
+        electricity = new Elements(11, FALSE);
+        computer = new Elements(12, FALSE);
+        life = new Elements(13, FALSE);
+        human = new Elements (14, FALSE);
+        swamp = new Elements (15, FALSE);
+        mud = new Elements(16, FALSE);
+        dave = new Elements(17, FALSE);
+        obsidian = new Elements(18, FALSE);
+        gunpowder = new Elements(19, FALSE);
+        dust = new Elements(20, FALSE);
 
     }
 
@@ -68,11 +85,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    */
-
-
-
-
     /*
 
     Vi burde overveje at tilføje billederne i MainActivity i stedet for i xml filen, da der kommer
@@ -93,20 +105,63 @@ public class MainActivity extends AppCompatActivity {
         else if(fire.activation==TRUE && water.activation==TRUE){
             ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
             steamButton.setVisibility(View.VISIBLE);
-            steam = new Elements (5, FALSE);
         }
         else if(fire.activation == TRUE && earth.activation==TRUE){
             ImageButton lavaButton = (ImageButton) findViewById(R.id.lavaButton);
             lavaButton.setVisibility(View.VISIBLE);
-            lava = new Elements (6, FALSE);
         }
         else if (air.activation == TRUE && steam.activation == TRUE){
             ImageButton cloudButton = (ImageButton) findViewById(R.id.cloudButton);
             cloudButton.setVisibility(View.VISIBLE);
-            cloud = new Elements (7, FALSE);
         }
-
-
+        else if (earth.activation == TRUE && water.activation == TRUE){
+            ImageButton soilButton = (ImageButton) findViewById(R.id.soilButton);
+            soilButton.setVisibility(View.VISIBLE);
+        }
+        else if (air.activation == TRUE && fire.activation==TRUE){
+            ImageButton energyButton = (ImageButton) findViewById(R.id.energyButton);
+            energyButton.setVisibility(View.VISIBLE);
+        }
+        else if(air.activation == TRUE && lava.activation == TRUE){
+            ImageButton stoneButton = (ImageButton) findViewById(R.id.stoneButton);
+            stoneButton.setVisibility(View.VISIBLE);
+        }
+        else if(stone.activation==TRUE && fire.activation==TRUE){
+            ImageButton metalButton = (ImageButton) findViewById(R.id.metalButton);
+            metalButton.setVisibility(View.VISIBLE);
+        }
+        else if (energy.activation==TRUE && metal.activation==TRUE){
+            ImageButton computerButton = (ImageButton) findViewById(R.id.laptopButton);
+            computerButton.setVisibility(View.VISIBLE);
+        }
+        else if (computer.activation == TRUE && human.activation== TRUE){
+            ImageButton daveButton = (ImageButton) findViewById(R.id.daveButton);
+            daveButton.setVisibility(View.VISIBLE);
+        }
+        else if (lava.activation==TRUE && water.activation==TRUE){
+            ImageButton obsidianButton = (ImageButton) findViewById(R.id.obsidianButton);
+            obsidianButton.setVisibility(View.VISIBLE);
+        }
+        else if (energy.activation==TRUE && swamp.activation == TRUE){
+            ImageButton lifeButton = (ImageButton) findViewById(R.id.lifeButton);
+            lifeButton.setVisibility(View.VISIBLE);
+        }
+        else if (mud.activation == TRUE && earth.activation==TRUE){
+            ImageButton swampButton = (ImageButton) findViewById(R.id.swampButton);
+            swampButton.setVisibility(View.VISIBLE);
+        }
+        else if (earth.activation==TRUE && air.activation==TRUE){
+            ImageButton dustButton = (ImageButton) findViewById(R.id.dustButton);
+            dustButton.setVisibility(View.VISIBLE);
+        }
+        else if (dust.activation==TRUE && fire.activation==TRUE){
+            ImageButton gunpowderButton = (ImageButton) findViewById(R.id.gunpowderButton);
+            gunpowderButton.setVisibility(View.VISIBLE);
+        }
+        else if (life.activation==TRUE && earth.activation==TRUE){
+            ImageButton humanButton = (ImageButton) findViewById(R.id.humanButton);
+            humanButton.setVisibility(View.VISIBLE);
+        }
         else{
             Toast invalid = Toast.makeText(getApplicationContext(), "Invalid combination of elements", Toast.LENGTH_SHORT);
             invalid.show();
