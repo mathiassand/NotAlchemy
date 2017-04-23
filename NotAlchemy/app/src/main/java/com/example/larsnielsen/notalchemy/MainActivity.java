@@ -11,11 +11,28 @@ import static java.lang.Boolean.TRUE;
 
 public class MainActivity extends AppCompatActivity {
     static int statuscheck = 0;
-
+    //Declaring element objects
     Elements water;
     Elements fire;
     Elements air;
     Elements earth;
+    Elements steam;
+    Elements cloud;
+    Elements lava;
+    Elements energy;
+    Elements electricity;
+    Elements dave;
+    Elements dust;
+    Elements mud;
+    Elements stone;
+    Elements metal;
+    Elements computer;
+    Elements obsidian;
+    Elements life;
+    Elements swamp;
+    Elements gunpowder;
+    Elements human;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Declaring objects. The objects declared are the elements that the player starts out with.
+
         water = new Elements(1, FALSE);
         fire = new Elements(2, FALSE);
         air = new Elements(3, FALSE);
@@ -77,15 +95,19 @@ public class MainActivity extends AppCompatActivity {
             testing.show();
             ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
             steamButton.setVisibility(View.VISIBLE);
-            Elements steam = new Elements (5, FALSE);
+            steam = new Elements (5, FALSE);
         }
         else if(fire.activation == TRUE && earth.activation==TRUE){
             ImageButton lavaButton = (ImageButton) findViewById(R.id.lavaButton);
             lavaButton.setVisibility(View.VISIBLE);
             Elements lava = new Elements (6, FALSE);
         }
+        else if (air.activation == TRUE && steam.activation == TRUE){
+            ImageButton cloudButton = (ImageButton) findViewById(R.id.cloudButton);
+            cloudButton.setVisibility(View.VISIBLE);
+            Elements cloud = new Elements (7, FALSE);
+        }
     }
-
 
     public void buttonPress (View v){
             switch (v.getId()) {
@@ -102,17 +124,14 @@ public class MainActivity extends AppCompatActivity {
                     air.changestate(air.getValue());
                     break;
                 case R.id.steamButton:
-                    ImageButton steamButton = (ImageButton) findViewById(R.id.steamButton);
-                    steamButton.setVisibility(View.GONE);
+                    steam.changestate(steam.getValue());
                     break;
 
 
             }
         }
 
-
 }
-
 
 /*
 playButton = (Button) findViewById(R.id.play);
