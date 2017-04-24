@@ -10,7 +10,6 @@ import static java.lang.Boolean.TRUE;
 public class Elements extends MainActivity{
     int value;
     boolean activation;
-
     public Elements(int value, boolean activation) {
         this.value = value;
         this.activation = activation;
@@ -19,13 +18,9 @@ public class Elements extends MainActivity{
     public int getValue() {
         return value;
     }
-
     public boolean isActivation() {
         return activation;
     }
-
-
-
 
 
     public void changestate(int selector){

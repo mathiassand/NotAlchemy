@@ -1,265 +1,265 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.larsnielsen.notalchemy.MainActivity">
-
-    <TableLayout
-        android:layout_width="374dp"
-        android:layout_height="361dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="16dp"
-        android:id="@+id/tableLayout">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <ImageButton
-                android:id="@+id/airButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/air"
-                android:onClick="buttonPress"
-                android:src="?android:selectableItemBackground"
-                app:srcCompat="@android:color/transparent" />
-
-            <ImageButton
-                android:id="@+id/earthButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/earth"
-                android:onClick="buttonPress"
-                android:src="?android:selectableItemBackground"
-                app:srcCompat="@android:color/transparent" />
-
-            <ImageButton
-                android:id="@+id/fireButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/fire"
-                android:onClick="buttonPress"
-                android:src="?android:selectableItemBackground"
-                app:srcCompat="@android:color/transparent" />
-
-            <ImageButton
-                android:id="@+id/waterButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/water"
-                android:onClick="buttonPress"
-                android:src="?android:selectableItemBackground"
-                app:srcCompat="@android:color/transparent" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-
-            <ImageButton
-                android:id="@+id/dustButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:onClick="buttonPress"
-                android:background="@mipmap/dust"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
-
-            <ImageButton
-                android:id="@+id/swampButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:onClick="buttonPress"
-                android:background="@mipmap/swamp"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground" />
-
-            <ImageButton
-                android:id="@+id/humanButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/human"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground"
-                android:visibility="gone"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/soilButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/soil"
-                android:onClick="buttonPress"
-                android:src="?android:selectableItemBackground"
-                android:visibility="gone"
-                app:srcCompat="@android:color/transparent" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/steamButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/steam"
-                android:onClick="buttonPress"
-                android:src="?android:selectableItemBackground"
-                android:visibility="gone"
-                app:srcCompat="@android:color/transparent" />
-
-            <ImageButton
-                android:id="@+id/stoneButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:background="@mipmap/stone"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/daveButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:background="@mipmap/dave"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/cloudButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:src="?android:selectableItemBackground"
-                android:background="@mipmap/cloud"
-                tools:layout_editor_absoluteX="148dp"
-                android:visibility="gone"
-                tools:layout_editor_absoluteY="67dp"
-                android:onClick="buttonPress"/>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <ImageButton
-                android:id="@+id/lifeButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/life"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/energyButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:background="@mipmap/energy"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/electricityButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/electricity"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/metalButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/metal"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <ImageButton
-                android:id="@+id/laptopButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                app:srcCompat="@android:color/transparent"
-                android:background="@mipmap/laptop"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/obsidianButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/obsidian"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/lavaButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/lava"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-
-            <ImageButton
-                android:id="@+id/gunpowderButton"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:background="@mipmap/gunpowder"
-                app:srcCompat="@android:color/transparent"
-                android:visibility="gone"
-                android:src="?android:selectableItemBackground"
-                android:onClick="buttonPress"/>
-        </TableRow>
-    </TableLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="combineButton"
-        android:text="Combine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
-
-
-</android.support.constraint.ConstraintLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.larsnielsen.notalchemy.MainActivity">
+
+    <TableLayout
+        android:layout_width="374dp"
+        android:layout_height="361dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/airButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/air"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/earthButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/earth"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/fireButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/fire"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/waterButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/water"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                app:srcCompat="@android:color/transparent" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageButton
+                android:id="@+id/dustButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:onClick="buttonPress"
+                android:background="@mipmap/dust"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/swampButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:onClick="buttonPress"
+                android:background="@mipmap/swamp"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/humanButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/human"
+                app:srcCompat="@android:color/transparent"
+                android:src="?android:selectableItemBackground"
+                android:visibility="gone"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/soilButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/soil"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                android:visibility="gone"
+                app:srcCompat="@android:color/transparent" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/steamButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/steam"
+                android:onClick="buttonPress"
+                android:src="?android:selectableItemBackground"
+                android:visibility="gone"
+                app:srcCompat="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/stoneButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/stone"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/daveButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/dave"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/cloudButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:src="?android:selectableItemBackground"
+                android:background="@mipmap/cloud"
+                tools:layout_editor_absoluteX="148dp"
+                android:visibility="gone"
+                tools:layout_editor_absoluteY="67dp"
+                android:onClick="buttonPress"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/lifeButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/life"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/energyButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/energy"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/electricityButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/electricity"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/metalButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/metal"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/laptopButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                app:srcCompat="@android:color/transparent"
+                android:background="@mipmap/laptop"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/obsidianButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/obsidian"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/lavaButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/lava"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+
+            <ImageButton
+                android:id="@+id/gunpowderButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/gunpowder"
+                app:srcCompat="@android:color/transparent"
+                android:visibility="gone"
+                android:src="?android:selectableItemBackground"
+                android:onClick="buttonPress"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="combineButton"
+        android:text="Combine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+
+</android.support.constraint.ConstraintLayout>
