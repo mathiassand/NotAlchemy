@@ -21,13 +21,11 @@ public class List extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        String[] NameList = {"water", "fire", "air", "earth", "steam", "cloud", "lava", "energy", "electricity",
-                             "dave", "dust", "mud", "stone", "metal", "computer", "obsidian", "life", "swamp", "gunpowder", "human"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, NameList );
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, MainActivity.getNameArray() );
 
         getListView().setAdapter(adapter);
 
-        Collections.sort(Arrays.asList(NameList), String.CASE_INSENSITIVE_ORDER);
+        Collections.sort(Arrays.asList(MainActivity.getNameArray()), String.CASE_INSENSITIVE_ORDER);
     }
 
 
