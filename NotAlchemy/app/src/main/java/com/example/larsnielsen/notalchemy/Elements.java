@@ -8,22 +8,21 @@ import static java.lang.Boolean.TRUE;
  */
 
 public class Elements extends MainActivity{
-    int value;
+    String value;
     boolean activation;
-    public Elements(int value, boolean activation) {
-        this.value = value;
+    public Elements(String value, boolean activation) {
+        this.value = "value";
         this.activation = activation;
     }
 
-    public int getValue() {
+    public String getValue() {
         return value;
     }
     public boolean isActivation() {
         return activation;
     }
 
-
-    public void changestate(int selector){
+    public void changestate(String selector){
         if(selector == getValue()) {
             if(this.isActivation() == TRUE){
                 activation = FALSE;
