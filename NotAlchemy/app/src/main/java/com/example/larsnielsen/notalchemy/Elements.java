@@ -11,7 +11,7 @@ public class Elements extends MainActivity{
     String value;
     boolean activation;
     public Elements(String value, boolean activation) {
-        this.value = "value";
+        this.value = value;
         this.activation = activation;
     }
 

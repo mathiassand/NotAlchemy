@@ -13,22 +13,16 @@ import java.util.Collections;
 
 public class List extends ListActivity {
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, MainActivity.getNameArray() );
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(),
+                android.R.layout.simple_list_item_1, MainActivity.getNameArray() );
 
         getListView().setAdapter(adapter);
 
         Collections.sort(Arrays.asList(MainActivity.getNameArray()), String.CASE_INSENSITIVE_ORDER);
     }
-
-
-
-
 }
