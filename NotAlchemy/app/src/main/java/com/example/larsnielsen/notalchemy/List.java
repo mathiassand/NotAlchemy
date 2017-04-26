@@ -12,7 +12,6 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class List extends ListActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
